@@ -31,5 +31,21 @@ namespace WinFormAdv
         {
             Application.Exit();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 새로만들기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.Text = "새로만들기 메뉴를 선택하셨습니다.";
+        }
+
+        private void 도움말보기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://bing.com");
+        }
     }
 }
